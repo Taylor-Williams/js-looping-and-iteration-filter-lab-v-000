@@ -2,7 +2,8 @@
 function findMatching(drivers, match){
   const newDrivers
   for(const driver of drivers){
-    if driver === match
+    if (driver === match) {  
       newDrivers.push(driver)
+    }
   }
 }
