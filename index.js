@@ -8,3 +8,13 @@ function findMatching(drivers, match){
   }
   return newDrivers
 }
+
+function fuzzyMatch(drivers, match){
+  const newDrivers = []
+  for(const driver of drivers){
+    if(driver.startsWith(match)){
+      newDrivers.push(driver)
+    }
+  }
+  return newDrivers
+}
