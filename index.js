@@ -18,3 +18,13 @@ function fuzzyMatch(drivers, match){
   }
   return newDrivers
 }
+
+function matchName(drivers, match){
+  const newDrivers = []
+  for(const driver of drivers){
+    if(driver.name === match){
+      newDrivers.push(driver)
+    }
+  }
+  return newDrivers
+}
